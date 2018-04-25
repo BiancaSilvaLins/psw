@@ -1,3 +1,4 @@
+package biblioteca.negocio.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -5,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import biblioteca.util.GerenciadorConexaoImpl;
+import biblioteca.negocio.basica.Autor;
 
 public class AutorDAOImpl implements AutorDAO {
 
@@ -184,5 +185,15 @@ public class AutorDAOImpl implements AutorDAO {
         } finally {
             g.desconectar(co);
         }
+    }
+
+    @Override
+    public void incluir(Autor a) throws ConexaoException, DAOException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void alterarAutor(Autor a) throws ConexaoException, DAOException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
